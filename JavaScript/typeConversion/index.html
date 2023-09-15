@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type conversion in js</title>
+</head>
+<body>
+   <h2>Type Conversion in js </h2> 
+   <p>Which means conerting the one data type into another data type</p>
+   <p>two types <br>1.manual <br>2.automatic</p>
+   <Script>
+//    maual type cast
+
+let a=50;
+document.write(a);
+document.write("<br/>");
+document.write(typeof a);
+
+//  ill make it string
+let b="500";
+document.write("<br/>");
+document.write("<br/>");
+document.write(b);
+document.write("<br/>");
+document.write(typeof b); 
+// explicitly given 
+document.write("<br/>");
+document.write("<br/>");
+let c= String(100);  // here explicitly
+document.write(c);
+document.write("<br/>");
+document.write(typeof c);
+
+// if i providee number it will chnage to number
+document.write("<br><br>");
+let d= Number("1545");// if give it quotes also its give number;
+document.write(d);
+document.write("<br>");
+document.write(typeof d+" (type of d)");
+document.write("<br><br>");
+
+
+// check for boolean
+
+let knowToDrive = true;
+document.write(knowToDrive);
+document.write("<br>");
+document.write(typeof knowToDrive);
+
+document.write("<br><br>");
+//  now we change that into other typr like string
+
+let knowToDrives = String(true);
+document.write(knowToDrives);
+document.write("<br>");
+document.write(typeof knowToDrives +"-> changed boolean to string..");
+   
+// if i change number(ture);  it show 1 bcz 1 is true and 0 is false...   
+document.write("<br><br> if i change number(ture);  it show 1 bcz 1 is true and 0 is false...");
+
+// array to string
+
+let arr= [1,2,3,4];
+document.write("<br>");
+document.write(arr+"<br>");
+document.write(arr.length +"<br><br>");
+
+// know change it to string... 
+// note: string calculate , and aothers are also concedered as string..
+
+let arr1= String([1,2,3,4]);
+document.write("<br>");
+document.write(arr1+"<br>");
+document.write(arr1.length+" converted array into string...");
+
+// parseInt and parseFloat 
+document.write("<br>");
+let n = parseFloat(123.445);
+document.write("<br>");
+document.write(n);
+
+document.write("<br>");
+let m= parseInt (234.556);
+document.write("<br>");
+document.write(m+" parse int figure the int value and remove float");
+
+document.write("<br>");
+
+// automatic convertion in js
+document.write(" <br> automatic convertion in js");
+
+document.write("<br>");
+
+document.write("9" + 5 +" 9 is string and it coceder 5 also string so it do concatination not addition..");
+document.write("<br>");
+document.write("6"+"6");
+
+document.write("<br>");
+
+// if give num it takes number..
+
+document.write("note: js convertion will accept + only for string concatination <br> other than that - * % all are make airthmitic opereration not concate please remember it.. <br><br>");
+// let see..
+
+document.write("9" - "6", " i provide in string but it come to they are numbers.. its the automatic type casting...");
+
+</Script>
+</body>
+</html>
+

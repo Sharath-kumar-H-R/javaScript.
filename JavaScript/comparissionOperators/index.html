@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>comparission operators</title>
+</head>
+<body>
+    <h1>Comparission operators in js</h1>
+ 
+    <p> comparission operators</p>
+    <p>==  !=  >=   <=   > < </p>
+<p>=== is used to value and data type should be equal.</p>
+<p>!=== is used to the both value and datatype are not equal.</p>
+
+<h2>Enter your age in the below box</h2>
+<input type="number" name="age" value="age" id="age">
+<button type="button" onclick="fun()">Enter</button>
+<br><br>
+<p id="result"></p>
+<script>
+    let a=20;
+    let b=30;
+    document.write(a===b);
+    document.write("<br>");
+    document.write(a!==b);
+
+function fun() {
+let age, eligible;
+
+age=Number(document.getElementById("age").value);
+if(isNaN(age)){
+    eligible="Not a Number";
+}
+else{
+    eligible=(age<18) ? " not eligible for voting" : "eligible for vote";
+}
+ document.getElementById("result").innerHTML = eligible;
+}
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What js does</title>
+</head>
+<body>
+    <h2>Change html content</h2>
+    <p id="changeH">If you click the below button... i will be change...</p>
+<button type="button" onclick="document.getElementById('changeH').innerHTML = 'im changed' ">Click me</button>
+
+<h2>HTML attribute values change</h2>
+<img id="code" src="https://i.pinimg.com/236x/6b/cd/fb/6bcdfb3f352b2922c73c0ae04074bceb.jpg" alt="coding boy"><br><br>
+<button type="button" onclick="document.getElementById('code').src='https://i.pinimg.com/236x/ef/bb/85/efbb854ea74af6343356009de4a35765.jpg'">Pray</button> &nbsp;
+<button type="button" onclick="document.getElementById('code').src='https://i.pinimg.com/236x/6b/cd/fb/6bcdfb3f352b2922c73c0ae04074bceb.jpg'">Coding</button>
+<br>
+<br>
+
+
+<h2>Changes the style of html element(change css)</h2>
+<p id="size">click the button to change my size........</p>
+<button type="button" onclick="document.getElementById('size').style.fontSize='40px'">Click me</button>
+<br>
+<br>
+
+<h2>Hides the html element</h2>
+
+
+<p id="hide">hello im the paragraph here....   you can hide me by click the bellow button</p>
+<button type="button" onclick="document.getElementById('hide').style.display='none' ">Hide me</button><br><br>
+
+<br><br>
+
+<h2>Shows the html hiden element</h2>
+<p id="show" style="display:none;">i was hidden by using  disply:none; in p element </p>
+<button type="button" onclick="document.getElementById('show').style.display='block' ">Show </button>
+
+
+</body>
+</html>
